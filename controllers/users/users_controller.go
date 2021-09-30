@@ -21,7 +21,7 @@ func getUserId(userIdParam string) (int64, *errors.RestErr) {
 
 func Get(c *gin.Context) {
 	if err := oauth.AuthenticateRequest(c.Request); err != nil {
-		c.JSON(err.Status, err)
+		c.JSON(err.Status(), err)
 	}
 	userId, idErr := getUserId(c.Param("user_id"))
 	if idErr != nil {

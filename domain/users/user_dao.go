@@ -6,10 +6,9 @@ import (
 	"strings"
 
 	"github.com/mohammadshabab/bookstore_users-api/datasources/mysql/users_db"
-	"github.com/mohammadshabab/bookstore_users-api/logger"
-	"github.com/mohammadshabab/bookstore_utils-go/rest_errors"
-
 	"github.com/mohammadshabab/bookstore_users-api/utils/mysql_utils"
+	"github.com/mohammadshabab/bookstore_utils-go/logger"
+	"github.com/mohammadshabab/bookstore_utils-go/rest_errors"
 )
 
 const (
